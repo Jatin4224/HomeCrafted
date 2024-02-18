@@ -1,0 +1,99 @@
+// # 1.styled components
+
+// install: $ npm install --save styled-components
+
+// const Button = styled.button`;
+// //` -> used for styling styled components using css
+// eg)
+
+// import styled from "styled-components";
+
+// const Button = styled.button`  background: green;
+//   color: white;`;
+
+// const Container = styled.div`  background: red;
+//   color: white;
+//   font-size: 2rem;
+//   .hey {
+//     font-size: 8rem;
+//   }`;
+
+// function App() {
+// return (
+
+// <div>
+// <h4>comfy sloth starter</h4>;<Button>click me</Button>
+// <Container>
+// <h3>hello world</h3>
+// <h4 className="hey">hey</h4>
+// </Container>
+// <button> hey</button>
+// </div>
+// );
+// }
+
+// export default App;
+
+//what is we have react component
+
+//Day 1 - react router setup
+
+//better setup of exporting -> using index.
+// import {Navbar, sidebar ..} from './components'
+
+// but for this setup index.js file in pages folder.
+// -inside this file we setup imports
+// eg) index.js
+// import Home from "./HomePage";
+// export { Home };
+
+// -we create same file in components folder too.
+
+// ->some components will be same for all pages:
+
+// sidebar,footer,navbar
+
+// code import { Navbar, Sidebar, Footer } from "./components";
+// import {
+// Home,
+// About,
+// Products,
+// SingleProduct,
+// Cart,
+// Error,
+// PrivateRoute,
+// Checkout,
+// } from "./pages";
+
+// function App() {
+// return (
+// <Router>
+// <Navbar />
+// <Sidebar />
+// <Switch>
+// <Route exact path="/">
+// <Home />
+// </Route>
+// <Route exact path="/about">
+// <About />
+// </Route>
+// <Route exact path="/cart">
+// <Cart />
+// </Route>
+// <Route exact path="/Products">
+// <Products />
+// </Route>
+// <Route exact path="/products/:id" children={<SingleProduct />} />
+// <Route exact path="/checkout">
+// <Checkout />
+// </Route>
+// <Route exact path="*">
+// <Error />
+// </Route>
+// </Switch>
+// <Footer />
+// </Router>
+// );
+// }
+
+// export default App;
