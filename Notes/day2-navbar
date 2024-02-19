@@ -32,3 +32,10 @@ export const links = [
     url: '/products',
   },
 ]
+
+<ul>
+  <links.map((link)=>{
+    const {text,id,name} = link;
+    <li={id} {name}
+  })
+  </ul>
